@@ -1,0 +1,8 @@
+test:
+  database: case_insensitive_attributes_test
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: <%= `who -m`.split.first %>
+  password:
+  min_messages: warning

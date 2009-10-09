@@ -5,12 +5,15 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "case_insensitive_attributes"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{A Rails plugin/gem that provides an API to declare which string columns in your models should be case (in)sensitive.}
+    gem.description = %Q{A Rails plugin/gem that provides an API to declare which string columns in your models should be case (in)sensitive.}
     gem.email = "myron.marston@gmail.com"
     gem.homepage = "http://github.com/myronmarston/case_insensitive_attributes"
     gem.authors = ["Myron Marston"]
     gem.add_development_dependency "thoughtbot-shoulda"
+    gem.add_dependency 'activerecord'
+    gem.add_dependency 'pg'
+
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
 rescue LoadError
